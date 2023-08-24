@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartEd</title>
+    <link rel="stylesheet" href="data/theme/light.css">
+    <script src="data/code/chart.umd.min.js"></script>
+    <script src="data/code/localization.js"></script>
+    <script src="data/code/preload.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="menu">
+            <p id="file_name">
+                <b>New</b>
+            </p>
+        </div>
+        <div id="toolbar"></div>
+        <div id="alert_section"></div>
+        <div id="main_section">
+            <div id="main_section_edit">
+                <div id="labels">
+                    <div class="collapsible_head">
+                        <div class="collapsible_head_title">
+                            <img src="data/icons/Label_16x.png" alt="Labels">
+                            <h4 id="labels_title">Labels</h4>
+                        </div>
+                        <button type="button" class="collapsible">
+                            <img src="data/icons/CollapseChevronUp_16x.png" alt="Collapse">
+                        </button>
+                    </div>
+                    <div class="collapsible_content" style="display: block;">
+                        <div id="label_inputs">
+                            <div class="field" style="flex: 100%;">
+                                <button type="button" id="add_label">
+                                    <img src="data/icons/AddClause_16x.png" alt="Add Label">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="datasets_container">
+                    <div class="collapsible_head">
+                        <div class="collapsible_head_title">
+                            <img src="data/icons/AvailabilityColumnChart_16x.png" alt="Datasets">
+                            <h4 id="datasets_title">Datasets</h4>
+                        </div>
+                        <button type="button" class="collapsible">
+                            <img src="data/icons/CollapseChevronUp_16x.png" alt="Collapse">
+                        </button>
+                    </div>
+                    <div class="collapsible_content" style="display: block;">
+                        <div id="datasets">
+                            <div class="field">
+                                <button type="button" id="add_dataset">
+                                    <img src="data/icons/AddForm_16x.png" alt="Add Dataset">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main_section_draw">
+                <canvas id="surface"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
